@@ -41,7 +41,7 @@ class ExcelController extends Controller
             $duplicateCount = 0;
             $duplicateRecords = [];
 
-
+          // adjust chunkSize according  to your server
             $chunks = array_chunk($rows, 100);
 
             DB::beginTransaction();
