@@ -14,5 +14,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::get('/', [ExcelController::class, 'showForm']);
 Route::get('/import', [ExcelController::class, 'showForm']);
 Route::post('/import', [ExcelController::class, 'import']);
